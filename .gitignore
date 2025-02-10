@@ -1,0 +1,15 @@
+# Node.js dependencies (exclude node_modules)
+/node_modules/
+
+# SQLite database file (optional, exclude database/expense.db)
+/database/
+
+# macOS system files
+.DS_Store
+
+# Log files
+*.log
+
+# Environment files (like .env, which may contain sensitive info)
+.env
+

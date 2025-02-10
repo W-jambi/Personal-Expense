@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Personal Expense Tracker</h1>
+
+        <div class="top-section">
+            <form id="expense-form" class="expense-form">
+                <input type="text" id="description" placeholder="Description" required>
+                <input type="number" id="amount" placeholder="Amount ($)" required>
+                <select id="category" required>
+                    <option value="" disabled selected>Select Category</option>
+                    <option value="Food">Food</option>
+                    <option value="Transport">Transport</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Utilities">Utilities</option>
+                    <option value="Health">Health</option>
+                    <option value="Other">Other</option>
+                </select>
+                <input type="date" id="date" required>
+                <button type="submit" class="btn">Add Expense</button>
+            </form>
+
+            <div class="filters">
+                <label for="date-filter">Filter by Date:</label>
+                <select id="date-filter">
+                    <option value="all">All</option>
+                    <option value="1">This Month</option>
+                    <option value="3">Last 3 Months</option>
+                    <option value="6">Last 6 Months</option>
+                    <option value="12">Last Year</option>
+                </select>
+
+                <label for="category-filter">Filter by Category:</label>
+                <select id="category-filter">
+                    <option value="all">All</option>
+                    <option value="Food">Food</option>
+                    <option value="Transport">Transport</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Utilities">Utilities</option>
+                    <option value="Health">Health</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+        </div>
+
+        <button id="show-expenses-btn" class="btn show-btn">Show Expenses</button>
+        <ul id="expense-list" class="expense-list"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

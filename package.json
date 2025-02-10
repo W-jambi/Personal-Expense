@@ -1,0 +1,16 @@
+{
+  "name": "personalexpensetracker1",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "npx live-server"
+  },
+  "author": "Wessam Jambi",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2",
+    "sqlite3": "^5.1.7"
+  }
+}

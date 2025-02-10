@@ -9,8 +9,8 @@ Add Expenses: Users can add new expenses including description, amount, category
 View Expenses: All expenses are displayed in a list format with their respective details.
 Filter Expenses: Users can filter expenses based on category and date range (e.g., Last 1 month, Last 3 months, etc.).
 Responsive Interface: The front-end is built to be responsive and user-friendly.
-Technologies Used
 
+Technologies Used:
 Backend:
 Node.js with Express: To handle the server-side logic and API routes.
 SQLite3: A lightweight relational database to store expenses.
@@ -55,17 +55,7 @@ GET /expenses: Fetches all expenses.
 POST /add-expense: Adds a new expense.
 The frontend can be accessed directly by navigating to http://localhost:3000 in your browser.
 
-Folder Structure
-/expense-tracker
-├── /public                 # Contains all static assets (HTML, CSS, JS)
-│   ├── index.html          # Main HTML file
-│   ├── style.css           # Styles for the app
-│   └── app.js              # Front-end JavaScript for dynamic functionality
-├── /database               # Contains SQLite database
-│   └── expenses.db         # SQLite database file
-├── server.js               # Backend server code
-├── package.json            # Project dependencies and scripts
-└── README.md               # Project documentation (this file)
+
 
 How to Use the Application
 
